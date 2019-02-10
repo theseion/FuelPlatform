@@ -21,4 +21,6 @@ platformAttributes
 				do: [ false ] ]) ifTrue: [ ^ #('squeak4.x') ].
 	(SystemVersion current version beginsWith: 'Squeak4.') ifTrue: [ ^ #('squeak4.x') ].
 	
-	Error signal: 'Could not determine image version'
+	
+	Warning signal: 'Could not determine image version. Using fallback'.
+	^ #('fuel-fallback')
