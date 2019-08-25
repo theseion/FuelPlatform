@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "FLSerializeExternalAddressTest",
+	"name" : "FLSerializeObjectThatUsesStatefulTrait",
 	"type" : "normal"
 }

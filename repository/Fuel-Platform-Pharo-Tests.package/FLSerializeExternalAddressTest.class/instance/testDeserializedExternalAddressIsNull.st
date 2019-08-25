@@ -1,10 +1,8 @@
 tests
 testDeserializedExternalAddressIsNull
-
-	| externalAddress byteArray |
-
+	| externalAddress loadedExternalAddress |
 	externalAddress := ExternalAddress fromAddress: 1234567890.
-	byteArray := self serialize: externalAddress.
-	externalAddress := self deserialize: byteArray.
+	self serialize: externalAddress.
+	loadedExternalAddress := self materialized.
 	
-	self assert: externalAddress isNull.
+	self assert: loadedExternalAddress isNull
