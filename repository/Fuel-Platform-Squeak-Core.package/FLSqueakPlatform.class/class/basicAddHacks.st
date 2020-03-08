@@ -5,4 +5,7 @@ basicAddHacks
 	self
 		addPackageManifest;
 		addTraits;
-		addAbstractBinaryFileStream
+		addAbstractBinaryFileStream;
+		addExternalAddress;
+		addZnBufferedReadStream;
+		addZnBufferedWriteStream
