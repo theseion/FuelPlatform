@@ -1,11 +1,11 @@
 private-hacks
 addZnBufferedReadStream
 	Smalltalk
-		at: #nBufferedReadStream
+		at: #ZnBufferedReadStream
 		ifPresent: [ :x | ^ self ].
 		
 	Object
-		subclass: #nBufferedReadStream
+		subclass: #ZnBufferedReadStream
 		instanceVariableNames: ''
 		classVariableNames: ''
 		poolDictionaries: ''
