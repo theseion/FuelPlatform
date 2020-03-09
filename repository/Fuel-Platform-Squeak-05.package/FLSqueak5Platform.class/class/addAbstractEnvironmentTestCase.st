@@ -7,7 +7,7 @@ addAbstractEnvironmentTestCase
 		instanceVariableNames: 'testingEnvironment'
 		classVariableNames: ''
 		poolDictionaries: ''
-		package: self hacksCategoryName.
+		category: self hacksCategoryName.
 		
 	(Smalltalk at: #AbstractEnvironmentTestCase) compile: 'initialize
 	super initialize.
