@@ -5,6 +5,7 @@ tearDownForFLSerializationTest
 		tearDownClassFactory;
 		tearDownGlobalVariables.
 	self streamFactory tearDown.
+	self tearDownInstanceVariables.
 	
 	super tearDown.
 	
