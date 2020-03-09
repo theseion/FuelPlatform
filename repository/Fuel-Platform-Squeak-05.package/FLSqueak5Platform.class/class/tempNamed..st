@@ -1,4 +1,4 @@
-private-extensions-methodcontext
+private-extensions-context
 tempNamed: aName
-	<flExtensionOf: #MethodContext>
+	<flExtensionOf: #Context>
 	^ self tempAt: (self tempNames indexOf: aName)

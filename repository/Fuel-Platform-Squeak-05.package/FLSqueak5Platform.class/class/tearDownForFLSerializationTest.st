@@ -1,5 +1,5 @@
 private-extensions-flserializationtest
-tearDown
+tearDownForFLSerializationTest
 	<flExtensionOf: #FLSerializationTest>
 	self
 		tearDownClassFactory;
