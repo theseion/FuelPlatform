@@ -1,7 +1,9 @@
 private-extensions-flserializationtest
 tearDownForFLSerializationTest
 	<flExtensionOf: #FLSerializationTest selector: #tearDown>
-	self tearDownClassFactory.
+	self
+		tearDownClassFactory;
+		tearDownGlobalVariables.
 	self streamFactory tearDown.
 	
 	super tearDown.
