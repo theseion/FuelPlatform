@@ -1,3 +1,3 @@
-private-convenience
+initialization
 reset
 	Current := nil
