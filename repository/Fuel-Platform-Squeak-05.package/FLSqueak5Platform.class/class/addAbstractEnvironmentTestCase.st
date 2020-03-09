@@ -1,7 +1,8 @@
 private-hacks
 addAbstractEnvironmentTestCase
-	Smalltalk at: #AbstractEnvironmentTestCase
-		ifPresent: [ ^ self ].
+	Smalltalk
+		at: #AbstractEnvironmentTestCase
+		ifPresent: [ :x | ^ self ].
 	
 	TestCase subclass: #AbstractEnvironmentTestCase
 		instanceVariableNames: 'testingEnvironment'
