@@ -25,10 +25,10 @@ pharoPackagesAndGroups: spec
 		spec group: 'FuelPlatformCurrentGroup' with: 'Fuel-Platform-Pharo-07' ].
 	spec for: #'pharo8.x' do: [
 		spec package: 'Fuel-Platform-Pharo-08' with: [ spec requires: 'Fuel-Platform-Pharo-Core' ].
-		spec group: 'FuelPlatformCurrentGroup' with: #('Fuel-Platform-Pharo-08' 'Fuel-Platform-Pharo-Tests') ].
+		spec group: 'FuelPlatformCurrentGroup' with: #('Fuel-Platform-Pharo-08') ].
 	spec for: #'pharo9.x' do: [
 		spec package: 'Fuel-Platform-Pharo-09' with: [ spec requires: 'Fuel-Platform-Pharo-Core' ].
-		spec group: 'FuelPlatformCurrentGroup' with: #('Fuel-Platform-Pharo-09' 'Fuel-Platform-Pharo-Tests') ].
+		spec group: 'FuelPlatformCurrentGroup' with: #('Fuel-Platform-Pharo-09') ].
 	spec for: #'fuel-fallback' do: [
 		spec package: 'Fuel-Platform-Pharo-09' with: [ spec requires: 'Fuel-Platform-Pharo-Core' ].
-		spec group: 'FuelPlatformCurrentGroup' with: #('Fuel-Platform-Pharo-09' 'Fuel-Platform-Pharo-Tests') ]
+		spec group: 'FuelPlatformCurrentGroup' with: #('Fuel-Platform-Pharo-09') ]
