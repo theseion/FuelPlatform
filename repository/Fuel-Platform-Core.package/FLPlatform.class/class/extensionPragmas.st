@@ -11,7 +11,7 @@ extensionPragmas
 			stop := false.
 			self class withAllSuperclassesDo: [ :class |
 				stop ifFalse: [
-					Pragma withPragmasIn: class do:  [ :pragma |
+					class pragmasDo: [ :pragma |
 						(pragma selector = selector and: [
 							"don't collect overridden methods"
 							(pragmas includesKey: pragma methodSelector) not ]) ifTrue: [
