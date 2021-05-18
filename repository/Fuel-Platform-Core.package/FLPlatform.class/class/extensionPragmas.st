@@ -11,13 +11,15 @@ extensionPragmas
 			stop := false.
 			self class withAllSuperclassesDo: [ :class |
 				stop ifFalse: [
-					class pragmasDo: [ :pragma |
-						(pragma selector = selector and: [
-							"don't collect overridden methods"
-							(pragmas includesKey: pragma methodSelector) not ]) ifTrue: [
-								pragmas
-									at: pragma methodSelector
-									put: pragma ] ].
-						FLPlatform class = class ifTrue: [ stop := true ] ] ] ].
+					self current
+						withPragmasIn: class
+						do: [ :pragma |
+							(pragma selector = selector and: [
+								"don't collect overridden methods"
+								(pragmas includesKey: pragma methodSelector) not ]) ifTrue: [
+									pragmas
+										at: pragma methodSelector
+										put: pragma ] ].
+							FLPlatform class = class ifTrue: [ stop := true ] ] ] ].
 			
 	^ pragmas values
