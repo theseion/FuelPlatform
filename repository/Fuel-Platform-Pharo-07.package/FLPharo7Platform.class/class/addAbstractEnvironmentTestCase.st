@@ -9,4 +9,6 @@ addAbstractEnvironmentTestCase
 		instanceVariableNames: 'testingEnvironment'
 		classVariableNames: ''
 		poolDictionaries: ''
-		package: self hacksCategoryName
+		package: self hacksCategoryName.
+	
+	(Smalltalk at: #AbstractEnvironmentTestCase) compile: 'environmentOfTest ^ Smalltalk globals'
