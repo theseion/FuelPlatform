@@ -10,6 +10,4 @@ addAbstractEnvironmentTestCase
 		poolDictionaries: ''
 		category: self hacksCategoryName.
 		
-	(Smalltalk at: #AbstractEnvironmentTestCase) compile: 'initialize
-	super initialize.
-	testingEnvironment := Smalltalk globals.'
+	(Smalltalk at: #AbstractEnvironmentTestCase) compile: 'environmentOfTest ^ Smalltalk globals'
