@@ -2,4 +2,6 @@ private-hacks
 basicAddHacks
 	super basicAddHacks.
 	
-	self addTraitAwareClassFactory
+	self
+			addTraitAwareClassFactory;
+			addAbstractEnvironmentTestCase
