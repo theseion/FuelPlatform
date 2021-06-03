@@ -1,3 +1,3 @@
 accessing-tests
 classFactoryForTestCaseClass
-	^ FLClassFactoryForTestCase
+	^ ClassFactoryForTestCase
