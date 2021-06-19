@@ -1,3 +1,3 @@
 accessing-files
-deleteFileNamed: aFilename
+deleteAllInDirectoryPath: aPathString
 	self subclassResponsibility

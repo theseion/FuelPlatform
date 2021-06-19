@@ -1,5 +1,5 @@
 accessing-files
-writeStreamForFileNamed: aString
+writeStreamForFilePath: aString
 	^ ((Smalltalk at: #File) named: aString) writeStream
 		binary;
 		yourself

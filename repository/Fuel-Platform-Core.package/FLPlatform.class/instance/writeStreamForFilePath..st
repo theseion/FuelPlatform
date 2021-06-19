@@ -1,3 +1,3 @@
 accessing-files
-fileNamed: aFilename readStreamDo: aBlock
+writeStreamForFilePath: aString
 	^ self subclassResponsibility

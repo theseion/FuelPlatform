@@ -1,3 +1,3 @@
 accessing-files
-deleteFileNamed: aFilename
+deleteFilePath: aFilename
 	((Smalltalk at: #File) named: aFilename) delete

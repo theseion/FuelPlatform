@@ -1,3 +1,3 @@
 accessing-files
-readStreamForFileNamed: aString
+createDirectoryPath: aPathString
 	^ self subclassResponsibility

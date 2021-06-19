@@ -1,3 +1,3 @@
 accessing-files
-writeStreamForFileNamed: aString
+filePathExists: aPathString
 	^ self subclassResponsibility

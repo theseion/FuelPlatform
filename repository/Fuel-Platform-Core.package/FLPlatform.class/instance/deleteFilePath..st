@@ -1,0 +1,3 @@
+accessing-files
+deleteFilePath: aFilename
+	self subclassResponsibility

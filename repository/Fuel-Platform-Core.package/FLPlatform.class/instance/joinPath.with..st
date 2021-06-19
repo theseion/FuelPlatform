@@ -1,3 +1,3 @@
 accessing-files
-fileNamed: aFilename writeStreamDo: aBlock
+joinPath: aPathString with: anotherPathString
 	^ self subclassResponsibility
