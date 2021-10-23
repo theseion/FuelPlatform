@@ -2,4 +2,5 @@ private-extensions-classvariable
 owningClass
 	<flExtensionOf: #ClassVariable isSource: true>
 	^ 'owningClass
-	^ self definingClass'
+	^ FLCurrentContext value environment allClasses detect: [ :class |
+		class hasClassVariable: self ]'
