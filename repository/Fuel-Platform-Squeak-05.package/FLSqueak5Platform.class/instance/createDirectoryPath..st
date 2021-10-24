@@ -1,3 +1,3 @@
 accessing-files
 createDirectoryPath: aPathString
-	^ (FileDirectory on: aPathString) assureExistance
+	^ (FileDirectory on: aPathString) assureExistence
