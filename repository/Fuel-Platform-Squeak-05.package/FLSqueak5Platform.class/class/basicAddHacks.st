@@ -4,4 +4,11 @@ basicAddHacks
 	
 	self
 		addAbstractEnvironmentTestCase;
-		addTraitAwareClassFactory
+		addAbstractLayout;
+		addClassVariable;
+		addGlobalVariable;
+		addMetaclassForTraits;
+		addPointerLayout;
+		addTaSequence;
+		addTraitAwareClassFactory;
+		addTraitedMetaclass
