@@ -1,5 +1,5 @@
 private-extensions-shiftclassbuilder
-package_ForShiftClassBuilder
+packageForShiftClassBuilder
 	<flExtensionOf: #ShiftClassBuilder isSource: true>
 	^ 'package: aString
 		self category: aString'
