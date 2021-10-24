@@ -1,3 +1,3 @@
 accessing-files
-createDirectoryPath: aPathString
+createTemporaryDirectoryPathNamed: aString
 	^ self subclassResponsibility
