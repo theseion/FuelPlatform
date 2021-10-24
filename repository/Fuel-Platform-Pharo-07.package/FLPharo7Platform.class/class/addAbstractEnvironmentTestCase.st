@@ -15,4 +15,5 @@ addAbstractEnvironmentTestCase
 		compile: 'setUp
 	super setUp.
 	testingEnvironment := Smalltalk globals.';
-		compile: 'environmentOfTest ^ Smalltalk globals'
+		compile: 'environmentOfTest ^ testingEnvironment';
+		compile: 'testingEnvironment: anEnvironment testingEnvironment := anEnvironment'
