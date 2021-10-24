@@ -10,5 +10,4 @@ basicAddHacks
 		addMetaclassForTraits;
 		addPointerLayout;
 		addTaSequence;
-		addTraitAwareClassFactory;
 		addTraitedMetaclass
