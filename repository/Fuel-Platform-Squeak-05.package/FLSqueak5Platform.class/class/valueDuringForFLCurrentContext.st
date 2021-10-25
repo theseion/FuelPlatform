@@ -1,4 +1,4 @@
-private-extensions-context
+private-extensions-flcurrentcontext
 valueDuringForFLCurrentContext
 	<flExtensionOf: #FLCurrentContext isClass: true isSource: true>
 	^ 'value: aContext during: aBlock

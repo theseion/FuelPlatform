@@ -1,3 +1,6 @@
 accessing-files
 writeStreamForFilePath: aString
-	^ StandardFileStream newFileNamed: aString
+	^ StandardFileStream new
+		open: aString forWrite: true;
+		binary;
+		yourself

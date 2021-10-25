@@ -1,3 +1,6 @@
 accessing-files
 readStreamForFilePath: aString
-	^ StandardFileStream readOnlyFileNamed: aString
+	^ StandardFileStream new
+		open: aString forWrite: false;
+		binary;
+		yourself
