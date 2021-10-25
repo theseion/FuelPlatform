@@ -1,3 +1,3 @@
 accessing-files
 createTemporaryDirectoryPathNamed: aString
-	^ (FileLocator temp asFileReference ensureCreateDirectory: aString) pathString
+	^ (FileLocator temp / aString) ensureCreateDirectory pathString
