@@ -2,11 +2,7 @@ private-extensions
 extensionPragmas
 	| pragmas |
 	pragmas := Dictionary new.
-	#(
-		flExtensionOf:
-		flExtensionOf:selector:
-		flExtensionOf:selector:isSource:
-		flExtensionOf:isSource:) do: [ :selector |
+	self extensionPragmaSelectors do: [ :selector |
 			| stop |
 			stop := false.
 			self class withAllSuperclassesDo: [ :class |
