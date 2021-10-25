@@ -1,5 +1,5 @@
 private-extensions-behavior
 basicSuperclassForBehavior
 	<flExtensionOf: #Behavior isSource: true>
-	'basicSuperclass: aClass
+	^ 'basicSuperclass: aClass
 	superclass := aClass'
