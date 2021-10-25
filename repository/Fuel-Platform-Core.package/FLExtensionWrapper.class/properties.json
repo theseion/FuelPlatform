@@ -9,7 +9,8 @@
 		"targetClass",
 		"method",
 		"selector",
-		"isSource"
+		"isSource",
+		"isClassSide"
 	],
 	"name" : "FLExtensionWrapper",
 	"type" : "normal"

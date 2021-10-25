@@ -8,6 +8,10 @@ initializeWithPragma: aPragma
 			readSelectorFrom: aPragma
 			argumentNames: argumentNamesAndValues first
 			argumentValues: argumentNamesAndValues second);
+		isClassSide: (self
+			readIsClassSideFrom: aPragma
+			argumentNames: argumentNamesAndValues first
+			argumentValues: argumentNamesAndValues second);
 		isSource: (self
 			readIsSourceFrom: aPragma
 			argumentNames: argumentNamesAndValues first
