@@ -1,7 +1,6 @@
 private-extensions-dateandtime
 materializeFromForDateAndTime: aDecoder
-	<flExtensionOf: #DateAndTime selector: #materializeFrom:>
-	<flExtensionClassSide>
+	<flExtensionOf: #DateAndTime isClassSide: true selector: #materializeFrom:>
 	| jdn nanos seconds offset |
 	jdn := aDecoder nextEncodedUint32.
 	nanos :=  aDecoder nextEncodedUint32.

@@ -1,5 +1,4 @@
 private-extensions-contextpart
 newFromFrameSize: aFrameSize
-	<flExtensionOf: #ContextPart>
-	<flExtensionClassSide>
+	<flExtensionOf: #ContextPart isClassSide: true>
 	^ super basicNew: aFrameSize

@@ -5,7 +5,6 @@ readTargetClassFrom: aPragma argumentNames: argumentNames argumentValues: argume
 		at: (argumentValues at: (argumentNames indexOf: 'flExtensionOf:'))
 		ifAbsent: [ ^ nil ].
 		
-	^ (aPragma method pragmas anySatisfy: [ :pragma |
-		pragma key = #flExtensionClassSide ])
-			ifTrue: [ class class ]
-			ifFalse: [ class ]
+	^ self isClassSide
+		ifTrue: [ class classSide ]
+		ifFalse: [ class instanceSide ]
