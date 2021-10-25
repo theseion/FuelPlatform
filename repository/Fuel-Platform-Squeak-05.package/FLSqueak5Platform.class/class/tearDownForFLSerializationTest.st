@@ -3,9 +3,7 @@ tearDownForFLSerializationTest
 	<flExtensionOf: #FLSerializationTest selector: #tearDown>
 	self
 		tearDownClassFactory;
-		tearDownGlobalVariables.
-	self streamFactory tearDown.
-	self tearDownInstanceVariables.
+		tearDownInstanceVariables.
 	
 	super tearDown.
 	
