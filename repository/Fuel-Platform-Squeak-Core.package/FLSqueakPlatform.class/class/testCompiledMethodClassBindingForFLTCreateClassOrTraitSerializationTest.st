@@ -1,7 +1,7 @@
-private-extensions-compiledmethod
+private-extensions-flcreateclassserializationtest
 testCompiledMethodClassBindingForFLTCreateClassOrTraitSerializationTest
 	<flExtensionOf: #FLTCreateClassOrTraitSerializationTest>
-	'testCompiledMethodClassBinding
+	^ 'testCompiledMethodClassBinding
 	"The class binding of each CM has to point to a correct Association, which should not be added to Smalltalk globals."
 	
 	| class materializedClassOrTrait className method1 method2 |	
