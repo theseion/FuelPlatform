@@ -1,3 +1,3 @@
 accessing-system
-doSilently: aBlock
+silentlyDo: aBlock
 	^ SystemAnnouncer uniqueInstance suspendAllWhile: aBlock

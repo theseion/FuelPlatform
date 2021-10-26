@@ -1,6 +1,6 @@
 private-extensions-flmetaclasscluster
 materializePostInstanceWithForFLMetaclassCluster
-	<flExtensionOf: #FLMetclassCluster isSource: true>
+	<flExtensionOf: #FLMetaclassCluster isSource: true>
 	^ 'materializePostInstance: aMetaclass with: aDecoder
 	| superclass instanceVariableNames format |
 	superclass := aDecoder nextEncodedReference.

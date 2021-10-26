@@ -1,4 +1,4 @@
 private-extensions-flbehaviorcluster
-serializeLayoutserializeLayout: aLayout with: anEncoder
+serializeLayout: aLayout with: anEncoder
 	<flExtensionOf: #FLBehaviorCluster>
 	"ignore"
