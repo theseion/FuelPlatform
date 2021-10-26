@@ -1,8 +1,4 @@
-private-extensions-trait
+private-extensions-class
 isClassForTrait
 	<flExtensionOf: #Trait isSource: true>
-	^ 'initialize
-	overlay := SystemDictionary new.
-	sentinel := Object new.
-	"Fix bad migration to Environment"
-	overlay add: #Undeclared -> WeakIdentityDictionary new'
+	^ 'isClass ^ false'
