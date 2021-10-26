@@ -1,6 +1,7 @@
 tests-compilation
 newSubclassOf: aClass named: className uses: aTraitComposition instanceVariableNames: ivNamesString classVariableNames: classVarsString poolDictionaries: poolNamesString environment: anEnvironment package: packageName
-	^ ClassBuilder new
+	| class |
+	class := ClassBuilder new
 		name: className
 		inEnvironment: anEnvironment
 		subclassOf: aClass
@@ -8,4 +9,8 @@ newSubclassOf: aClass named: className uses: aTraitComposition instanceVariableN
 		instanceVariableNames: ivNamesString
 		classVariableNames: classVarsString
 		poolDictionaries: poolNamesString
-		category: packageName
+		category: packageName.
+		
+	^ class
+		setTraitComposition: aTraitComposition asTraitComposition;
+		yourself

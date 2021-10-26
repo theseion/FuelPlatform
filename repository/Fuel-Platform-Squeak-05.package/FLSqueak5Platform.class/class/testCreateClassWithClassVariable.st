@@ -1,6 +1,6 @@
 private-extensions-flcreateclassserializationtest
 testCreateClassWithClassVariable
-	<flExensionOf: #FLCreateClassSerializationTest>
+	<flExtensionOf: #FLCreateClassSerializationTest>
 	"Tests materialization a class not defined in the image, with a class variable."
 	
 	| aClass materializedClass |	
