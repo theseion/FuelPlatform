@@ -1,3 +1,3 @@
 accessing-system
 silentlyDo: aBlock
-	^ SystemChangeNotifier uniqueInstance silentlyDo: aBlock
+	^ SystemChangeNotifier uniqueInstance doSilently: aBlock

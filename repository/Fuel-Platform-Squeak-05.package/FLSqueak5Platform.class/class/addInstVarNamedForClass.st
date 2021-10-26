@@ -3,4 +3,4 @@ addInstVarNamedForClass
 	<flExtensionOf: #Class isSource: true>
 	^ 'addInstVarNamed: t1 
 	^ FLPlatform current
-		doSilently: [self addInstVarName: t1]'
+		silentlyDo: [self addInstVarName: t1]'
