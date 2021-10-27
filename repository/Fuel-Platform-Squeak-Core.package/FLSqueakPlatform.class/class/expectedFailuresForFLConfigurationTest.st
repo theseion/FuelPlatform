@@ -1,4 +1,4 @@
-private-extensions-flmetaclasscluster
+private-extensions-flconfigurationtest
 expectedFailuresForFLConfigurationTest
 	<flExtensionOf: #FLConfigurationTest selector: #expectedFailures>
-	^ #(testFileNameWrong testDecorateStreamFactory)
+	^ #(testFileNameWrong)
