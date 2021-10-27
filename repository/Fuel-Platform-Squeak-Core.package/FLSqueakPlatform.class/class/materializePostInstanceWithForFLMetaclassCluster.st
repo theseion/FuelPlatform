@@ -11,4 +11,4 @@ materializePostInstanceWithForFLMetaclassCluster
 		basicSuperclass: superclass;
 		setFormat: format;
 		methodDictionary: MethodDictionary new;
-		fuelSetInstanceVariables: instanceVariables'
+		fuelSetInstanceVariables: instanceVariableNames'
