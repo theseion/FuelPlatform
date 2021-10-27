@@ -7,11 +7,7 @@ newSqueakPlatformAttributesSourceFrom: aCollection
 	Smalltalk
 		at: #SystemVersion
 		ifPresent: [:cl | 
-			versionString := cl current version.
-			(versionString beginsWith: ''Squeak3.10'')
-				ifTrue: [attributes add: #''squeak3.10.x''].
-			(versionString beginsWith: ''Squeak4'')
-				ifTrue: [attributes add: #''squeak4.x''.'.
+			'.
 		aCollection do: [ :version |
 			stream
 				nextPutAll: '(versionString beginsWith: ''';
