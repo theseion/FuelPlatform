@@ -2,6 +2,7 @@ tests-compilation
 newAnonymousTraitNamed: aString
 	"Setting category to nil prevents registration in organizational structures"
 	^ Trait
-		newTraitNamed: aString
+		named: aString
 		uses: #()
-		category: nil
+		category: 'ignore'
+		env: (Environment withName: 'anonymous env')

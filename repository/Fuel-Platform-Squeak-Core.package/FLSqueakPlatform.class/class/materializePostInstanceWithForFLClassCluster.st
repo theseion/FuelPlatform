@@ -15,7 +15,5 @@ materializePostInstanceWithForFLClassCluster
 		setFormat: format;
 		setName: name;
 		basicCategory: category; 
-		methodDictionary: MethodDictionary new.
-	
-	instanceVariableNames do: [ :varName |
-		aClass addInstVarNamed: varName ]'
+		methodDictionary: MethodDictionary new;
+		fuelSetInstanceVariables: instanceVariables'

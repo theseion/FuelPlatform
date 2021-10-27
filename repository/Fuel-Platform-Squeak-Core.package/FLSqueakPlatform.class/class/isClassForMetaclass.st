@@ -1,4 +1,4 @@
-private-extensions-trait
+private-extensions-metaclass
 isClassForMetaclass
 	<flExtensionOf: #Metaclass isSource: true>
 	^ 'isClass ^ true'

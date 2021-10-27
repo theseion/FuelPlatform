@@ -10,7 +10,5 @@ materializePostInstanceWithForFLMetaclassCluster
 	aMetaclass
 		basicSuperclass: superclass;
 		setFormat: format;
-		methodDictionary: MethodDictionary new.
-	
-	instanceVariableNames do: [ :varName |
-		aMetaclass addInstVarNamed: varName ]'
+		methodDictionary: MethodDictionary new;
+		fuelSetInstanceVariables: instanceVariables'
