@@ -11,4 +11,4 @@ fuelAfterMaterializationForCompiledMethod
 	
 	self isInstalled ifFalse: [ ^ self ].
 	
-	self recompile: selector from: self'
+	self methodClass recompile: self selector'
