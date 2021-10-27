@@ -11,7 +11,7 @@ materializePostInstanceWithForFLClassCluster
 	instanceVariableNames := aDecoder nextEncodedString substrings: '' ''.
 	"<5 bits inst spec><16 bits inst size>.
 	Subclass inst spec may be different than that of superclass (e.g. #word instead of #normal)."
-	newFormat := (format bitShift: -16) bitShift: 16)
+	newFormat := ((format bitShift: -16) bitShift: 16)
 		+ superclass instSize
 		+ instanceVariableNames size.
 	aClass 
