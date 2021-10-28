@@ -1,4 +1,4 @@
-private-extensions-environmentprotectingwrapper
+private-extensions-flenvironmentprotectingwrapper
 initializeForFLEnvironmentProtectingWrapper
 	<flExtensionOf: #FLEnvironmentProtectingWrapper isSource: true>
 	^ 'initialize
