@@ -1,0 +1,4 @@
+private-extensions-flfilereferencestreambasicserializationtest
+runCaseForFLFileReferenceStreamBasicSerializationTest
+	<flExtensionOf: #FLFileReferenceStreamBasicSerializationTest selector: #runCase>
+	self skip

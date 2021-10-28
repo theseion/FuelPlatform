@@ -1,5 +1,5 @@
 private-extensions-blockclosure
-startpcOrOuterCodeForBlockClosure
+isFullBlock
 	<flExtensionOf: #BlockClosure isSource: true>
-	^ 'startpcOrOuterCode
-	^ startpc'
+	^ 'isFullBlock
+	^ false'

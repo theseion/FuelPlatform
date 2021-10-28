@@ -1,4 +1,4 @@
-private-extensions-Instructionstream
+private-extensions-instructionstream
 compiledCodeForInstructionStream
 	<flExtensionOf: #InstructionStream isSource: true>
 	^ 'compiledCode

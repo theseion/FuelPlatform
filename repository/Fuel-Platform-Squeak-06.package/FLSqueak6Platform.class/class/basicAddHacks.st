@@ -3,5 +3,17 @@ basicAddHacks
 	super basicAddHacks.
 	
 	self
-			addTraitAwareClassFactory;
-			addAbstractEnvironmentTestCase
+		addPackageManifest;
+		addTraits;
+		addAbstractBinaryFileStream;
+		addExternalAddress;
+		addZnBufferedReadStream;
+		addZnBufferedWriteStream;
+		addAbstractEnvironmentTestCase;
+		addAbstractLayout;
+		addClassVariable;
+		addGlobalVariable;
+		addMetaclassForTraits;
+		addPointerLayout;
+		addTaSequence;
+		addTraitedMetaclass
