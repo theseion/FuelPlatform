@@ -1,3 +1,3 @@
-as yet unclassified
+tests-testing
 expectedFailuresOf: aClass inherited: aCollection
 	^ aCollection
