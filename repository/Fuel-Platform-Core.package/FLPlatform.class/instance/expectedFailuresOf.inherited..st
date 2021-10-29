@@ -1,3 +1,3 @@
 as yet unclassified
-expectedFailuresOf: aClass inherited: anArray
-	^ anArray
+expectedFailuresOf: aClass inherited: aCollection
+	^ aCollection asOrderedCollection

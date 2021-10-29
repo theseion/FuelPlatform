@@ -1,8 +1,8 @@
 tests-testing
-expectedFailuresOf: aClass inherited: anArray
+expectedFailuresOf: aClass inherited: aCollection
 	aClass = (Smalltalk at: #FLFullBlockClosureSerializationTest) ifTrue: [
-		^ anArray copy
+		^ aCollection
 			addAll: #(testBlockClosureRemoved testBlockClosureChangeDifferentBytecodes);
 			yourself ].
 	
-	^ anArray
+	^ aCollection

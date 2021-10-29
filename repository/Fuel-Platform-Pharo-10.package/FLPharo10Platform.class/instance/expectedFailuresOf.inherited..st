@@ -1,7 +1,7 @@
 tests-testing
-expectedFailuresOf: aClass inherited: anArray
+expectedFailuresOf: aClass inherited: aCollection
 	aClass = (Smalltalk at: #FLBasicSerializationTest) ifTrue: [
-		^ anArray copy
+		^ aCollection
 			addAll: #(
 				"Global values are expected to be of type String. We'd need to modify string
 				encoding to support String and WideString or treat the value as an arbitrary
@@ -11,4 +11,4 @@ expectedFailuresOf: aClass inherited: anArray
 				testWideStringClassName);
 			yourself ].
 		
-	^ anArray
+	^ aCollection
