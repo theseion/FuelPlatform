@@ -1,6 +1,6 @@
 tests-testing
 expectedFailuresOf: aClass inherited: aCollection
-	(aClass inheritsFrom: (Smalltalk at: #FLBasicSerializationTest)) ifTrue: [
+	(aClass includesBehavior: (Smalltalk at: #FLBasicSerializationTest)) ifTrue: [
 		^ aCollection
 			addAll: #(
 				"Global values are expected to be of type String. We'd need to modify string

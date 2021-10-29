@@ -1,6 +1,6 @@
 tests-testing
 expectedFailuresOf: aClass inherited: aCollection
-	(aClass inheritsFrom: (Smalltalk at: #FLBasicSerializationTest)) ifTrue: [
+	(aClass includesBehavior: (Smalltalk at: #FLBasicSerializationTest)) ifTrue: [
 		^ aCollection
 			addAll: #(
 				"Global values are expected to be of type String. We'd need to modify string
@@ -10,11 +10,11 @@ expectedFailuresOf: aClass inherited: aCollection
 				testConsiderCustomWideSymbolGlobal
 				testWideStringClassName);
 			yourself ].
-	(aClass inheritsFrom: (Smalltalk at: #FLConfigurationTest)) ifTrue: [
+	(aClass includesBehavior: (Smalltalk at: #FLConfigurationTest)) ifTrue: [
 		^ aCollection
 			add: #testFileNameWrong ;
 			yourself ].
-	(aClass inheritsFrom: #FLFileReferenceStreamBasicSerializationTest) ifTrue: [
+	(aClass includesBehavior: #FLFileReferenceStreamBasicSerializationTest) ifTrue: [
 		"Don't inherit failures from FLBasicSerializationTest because we're
 		skipping *all* tests. Expected failures would count towards failures."
 		^ OrderedCollection new ].
