@@ -5,6 +5,4 @@ expectedFailuresOf: aClass inherited: anArray
 			addAll: #(testBlockClosureRemoved testBlockClosureChangeDifferentBytecodes);
 			yourself ].
 	
-	^ super
-		expectedFailuresOf: aClass
-		inherited: anArray
+	^ anArray

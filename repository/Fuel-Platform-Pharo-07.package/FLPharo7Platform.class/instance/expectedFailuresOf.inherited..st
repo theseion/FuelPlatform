@@ -13,4 +13,6 @@ expectedFailuresOf: aClass inherited: anArray
 	aClass = (Smalltalk at: #FLFullBlockClosureSerializationTest) ifTrue: [
 		^ anArray copy
 			addAll: #(testBlockClosureRemoved testBlockClosureChangeDifferentBytecodes);
-			yourself ]
+			yourself ].
+		
+	^ anArray

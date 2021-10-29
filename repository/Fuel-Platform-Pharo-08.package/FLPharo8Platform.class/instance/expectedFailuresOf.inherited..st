@@ -9,4 +9,6 @@ expectedFailuresOf: aClass inherited: anArray
 				testWideStringGlobal
 				testConsiderCustomWideSymbolGlobal
 				testWideStringClassName);
-			yourself ]
+			yourself ].
+		
+	^ anArray

@@ -15,4 +15,6 @@ expectedFailuresOf: aClass inherited: anArray
 	aClass = #FLFileReferenceStreamBasicSerializationTest ifTrue: [
 		"Don't inherit failures from FLBasicSerializationTest because we're
 		skipping *all* tests. Expected failures would count towards failures."
-		^ #() ]
+		^ #() ].
+		
+	^ anArray
