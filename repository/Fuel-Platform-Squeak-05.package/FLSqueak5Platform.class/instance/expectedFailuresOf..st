@@ -15,5 +15,10 @@ expectedFailuresOf: aClass
 				testWideStringClassName) ].
 	(aClass includesBehavior: (Smalltalk at: #FLConfigurationTest)) ifTrue: [
 		inherited add: #testFileNameWrong ].
+	
+	(aClass includesBehavior: (Smalltalk at: #FLFullBlockClosureSerializationTest)) ifTrue: [
+		"Squeak 5.3 has FullBlockClosure and CompiledBlock but they don't appear to be used,
+		at least not with the VM that runs the tests."
+		inherited addAll: #(testBlockClosureRemoved testBlockClosureChangeDifferentBytecodes) ].
 		
 	^ inherited

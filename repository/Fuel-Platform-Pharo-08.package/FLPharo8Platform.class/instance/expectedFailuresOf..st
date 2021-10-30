@@ -10,5 +10,7 @@ expectedFailuresOf: aClass
 			testWideStringGlobal
 			testConsiderCustomWideSymbolGlobal
 			testWideStringClassName) ].
+	(aClass includesBehavior: (Smalltalk at: #FLFullBlockClosureSerializationTest)) ifTrue: [ 
+		inherited addAll: #(testBlockClosureRemoved testBlockClosureChangeDifferentBytecodes) ].
 		
 	^ inherited
