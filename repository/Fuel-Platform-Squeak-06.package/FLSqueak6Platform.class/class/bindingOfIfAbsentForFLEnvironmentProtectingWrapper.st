@@ -7,4 +7,4 @@ bindingOfIfAbsentForFLEnvironmentProtectingWrapper
 		ifAbsent: [
 			environment
 				bindingOf: aSymbol
-				ifAbsent: aBlock'
+				ifAbsent: aBlock ]'
