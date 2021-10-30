@@ -1,3 +1,4 @@
 accessing-files
 createTemporaryDirectoryPathNamed: aString
-	^ (FileDirectory default createDirectory: aString) fullName
+	FileDirectory default createDirectory: aString.
+	^ (FileDirectory default / aString) fullName
