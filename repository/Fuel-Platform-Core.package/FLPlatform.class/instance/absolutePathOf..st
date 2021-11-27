@@ -1,3 +1,3 @@
-accessing-system
+accessing - system
 absolutePathOf: aString
 	^ self subclassResponsibility

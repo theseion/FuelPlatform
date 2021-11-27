@@ -1,3 +1,3 @@
-accessing-files
+accessing - files
 deleteFileNamed: aFilename
 	self subclassResponsibility

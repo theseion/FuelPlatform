@@ -1,2 +1,2 @@
-private-hacks-metacello
+private - hacks-metacello
 fixMetacello

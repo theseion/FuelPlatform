@@ -1,4 +1,4 @@
-accessing-compiler
+accessing - compiler
 renamedMethodCopyOf: aMethod selector: aSymbol
 	| newMethod |
 	newMethod := aMethod ast

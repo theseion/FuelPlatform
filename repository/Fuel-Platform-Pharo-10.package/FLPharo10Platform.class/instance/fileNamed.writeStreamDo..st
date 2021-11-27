@@ -1,4 +1,4 @@
-accessing-files
+accessing - files
 fileNamed: aFilename writeStreamDo: aBlock
 	^ ((Smalltalk at: #File) named: aFilename) writeStreamDo: [ :stream |
 		stream binary.

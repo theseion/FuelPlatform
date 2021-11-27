@@ -1,3 +1,3 @@
-accessing-files
+accessing - files
 fileNamed: aFilename readStreamDo: aBlock
 	^ self subclassResponsibility

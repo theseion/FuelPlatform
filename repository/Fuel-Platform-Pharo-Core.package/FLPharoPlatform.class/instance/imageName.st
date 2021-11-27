@@ -1,3 +1,3 @@
-accessing-system
+accessing - system
 imageName
 	^ Smalltalk image shortImageName

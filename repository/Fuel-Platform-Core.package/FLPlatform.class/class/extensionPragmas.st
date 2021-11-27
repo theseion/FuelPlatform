@@ -1,4 +1,4 @@
-private-extensions
+private - extensions
 extensionPragmas
 	| pragmas |
 	pragmas := Dictionary new.

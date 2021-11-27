@@ -1,4 +1,4 @@
-private-hacks
+private - hacks
 basicAddHacks
 	self
 		fixMetacello;
