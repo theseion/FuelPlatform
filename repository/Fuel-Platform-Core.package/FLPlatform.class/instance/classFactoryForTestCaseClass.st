@@ -1,3 +1,3 @@
-accessing-tests
+accessing - tests
 classFactoryForTestCaseClass
-	^ FLClassFactoryForTestCase
+	^ Smalltalk at: #FLClassFactoryForTestCase
