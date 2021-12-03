@@ -14,6 +14,6 @@ expectedFailuresOf: aClass
 				testConsiderCustomWideSymbolGlobal
 				testWideStringClassName) ].
 	(aClass includesBehavior: (Smalltalk at: #FLConfigurationTest)) ifTrue: [
-		inherited add: #testFileNameWrong ].
+		inherited add: #testFilePathWrong ].
 		
 	^ inherited
