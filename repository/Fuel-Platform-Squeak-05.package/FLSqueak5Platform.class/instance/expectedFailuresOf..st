@@ -20,5 +20,13 @@ expectedFailuresOf: aClass
 		"Squeak 5.3 has FullBlockClosure and CompiledBlock but they don't appear to be used,
 		at least not with the VM that runs the tests."
 		inherited addAll: #(testBlockClosureRemoved testBlockClosureChangeDifferentBytecodes) ].
+	
+	(aClass includesBehavior: (Smalltalk at: #FLCreateClassSerializationTest)) ifTrue: [
+		"Squeak 5.3 does not have stateful traits"
+		inherited add: #testCreateClassWithCreatedTraitWithInstanceVariable ].
+	
+	(aClass includesBehavior: (Smalltalk at: #FLGlobalTraitSerializationTest)) ifTrue: [
+		"Squeak 5.3 does not have stateful traits"
+		inherited add: #testCreateClassWithCreatedTraitWithInstanceVariable ].
 		
 	^ inherited

@@ -15,5 +15,13 @@ expectedFailuresOf: aClass
 				testWideStringClassName) ].
 	(aClass includesBehavior: (Smalltalk at: #FLConfigurationTest)) ifTrue: [
 		inherited add: #testFilePathWrong ].
+	
+	(aClass includesBehavior: (Smalltalk at: #FLCreateClassSerializationTest)) ifTrue: [
+		"Squeak 6 does not have stateful traits"
+		inherited add: #testCreateClassWithCreatedTraitWithInstanceVariable ].
+	
+	(aClass includesBehavior: (Smalltalk at: #FLGlobalTraitSerializationTest)) ifTrue: [
+		"Squeak 6 does not have stateful traits"
+		inherited add: #testCreateClassWithCreatedTraitWithInstanceVariable ].
 		
 	^ inherited

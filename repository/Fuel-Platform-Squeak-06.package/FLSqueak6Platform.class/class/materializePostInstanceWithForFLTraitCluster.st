@@ -6,6 +6,9 @@ materializePostInstanceWithForFLTraitCluster
 	category := aDecoder nextEncodedReference.
 	name := aDecoder nextEncodedReference.
 	environment := aDecoder nextEncodedReference.
+	aDecoder nextEncodedReference. "format"
+	aDecoder nextEncodedReference. "layout"
+	aDecoder nextEncodedString. "instance variables"
 	
 	aTrait 
 		name: name;
