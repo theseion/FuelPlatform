@@ -1,7 +1,8 @@
 private-extensions-behavior
 fuelRecomputeSlotScopeWithTraitsForBehavior
 	<flExtensionOf: #Behavior isSource: true>
-	^ '"We only know about trait variables once the trait composition
+	^ 'fuelRecomputeSlotScopeWithTraitsForBehavior
+	"We only know about trait variables once the trait composition
 	has been fully materialized. Now we need to update the slot scope
 	with the information from traits and recompute the class
 	format since it may currently define too many fields.
