@@ -12,5 +12,13 @@ expectedFailuresOf: aClass
 			testWideStringClassName) ].
 	(aClass includesBehavior: (Smalltalk at: #FLFullBlockClosureSerializationTest)) ifTrue: [
 		inherited addAll: #(testBlockClosureRemoved testBlockClosureChangeDifferentBytecodes) ].
+	
+	(aClass includesBehavior: (Smalltalk at: #FLCreateClassSerializationTest)) ifTrue: [
+		"Pharo 7 does not have stateful traits"
+		inherited add: #testCreateClassWithCreatedTraitWithInstanceVariable ].
+	
+	(aClass includesBehavior: (Smalltalk at: #FLGlobalTraitSerializationTest)) ifTrue: [
+		"Pharo 7 does not have stateful traits"
+		inherited add: #testCreateClassWithCreatedTraitWithInstanceVariable ].
 		
 	^ inherited
