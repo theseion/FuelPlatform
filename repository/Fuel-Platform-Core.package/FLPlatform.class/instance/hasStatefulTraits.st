@@ -1,0 +1,3 @@
+testing
+hasStatefulTraits
+	^ self subclassResponsibility
