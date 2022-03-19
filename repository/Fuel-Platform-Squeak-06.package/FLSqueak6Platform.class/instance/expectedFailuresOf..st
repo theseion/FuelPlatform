@@ -13,8 +13,6 @@ expectedFailuresOf: aClass
 				testWideStringGlobal
 				testConsiderCustomWideSymbolGlobal
 				testWideStringClassName) ].
-	(aClass includesBehavior: (Smalltalk at: #FLConfigurationTest)) ifTrue: [
-		inherited add: #testFilePathWrong ].
 	
 	(aClass includesBehavior: (Smalltalk at: #FLCreateClassSerializationTest)) ifTrue: [
 		"Squeak 6 does not have stateful traits"
