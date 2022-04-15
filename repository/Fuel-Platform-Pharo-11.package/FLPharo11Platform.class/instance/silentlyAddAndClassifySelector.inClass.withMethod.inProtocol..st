@@ -1,4 +1,4 @@
-accessing-compiler
+accessing - compiler
 silentlyAddAndClassifySelector: aSymbol inClass: aClass withMethod: aCompiledMethod inProtocol: aString
 	aClass
 		addSelector: aSymbol

@@ -1,3 +1,0 @@
-accessing-files
-deleteAllInDirectoryPath: aPathString
-	aPathString asFileReference deleteAll
