@@ -11,7 +11,25 @@ expectedFailuresOf: aClass
 			testConsiderCustomWideSymbolGlobal
 			testWideStringClassName) ].
 	(aClass includesBehavior: (Smalltalk at: #FLFullBlockClosureSerializationTest)) ifTrue: [
-		inherited addAll: #(testBlockClosureRemoved testBlockClosureChangeDifferentBytecodes) ].
+		inherited addAll: #(
+			testBlockClosureChangeDifferentBytecodes
+			testBlockClosureChangeDifferentBytecodesConstant
+			testBlockClosureChangeDifferentBytecodesNonClean
+			testBlockClosureChangeSameBytecodesConstant
+			testBlockClosureRemoved
+			testBlockClosureRemovedConstant
+			testBlockClosureRemovedNonClean) ].
+	(aClass includesBehavior: (Smalltalk at: #FLBlockClosureSerializationTest)) ifTrue: [
+		inherited addAll: #(
+			"New closure optimizations"
+			testBlockClosureChangeDifferentBytecodesConstant
+			testBlockClosureChangeSameBytecodesConstant
+			testBlockClosureRemovedConstant) ].
+	(aClass includesBehavior: (Smalltalk at: #FLGlobalEnvironmentTest)) ifTrue: [
+		inherited addAll: #(
+			"New closure optimizations"
+			testCompiledMethodNotChangedConstant
+			testCompiledMethodChangedNonClean) ].
 	
 	(aClass includesBehavior: (Smalltalk at: #FLCreateClassSerializationTest)) ifTrue: [
 		"Pharo 7 does not have stateful traits"
@@ -20,22 +38,5 @@ expectedFailuresOf: aClass
 	(aClass includesBehavior: (Smalltalk at: #FLGlobalTraitSerializationTest)) ifTrue: [
 		"Pharo 7 does not have stateful traits"
 		inherited add: #testCreateClassWithCreatedTraitWithInstanceVariable ].
-	
-	aClass = (Smalltalk at: #FLFullBlockClosureSerializationTest) ifTrue: [
-		inherited addAll: #(
-			"New closure optimizations"
-			#testBlockClosureChangeDifferentBytecodesConstant
-			#testBlockClosureChangeSameBytecodesConstant
-			#testBlockClosureRemovedConstant) ].
-	aClass = (Smalltalk at: #FLBlockClosureSerializationTest) ifTrue: [
-		inherited addAll: #(
-			"New closure optimizations"
-			#testBlockClosureChangeDifferentBytecodesConstant
-			#testBlockClosureChangeSameBytecodesConstant
-			#testBlockClosureRemovedConstant) ].
-	aClass = (Smalltalk at: #FLGlobalEnvironmentTest) ifTrue: [
-		inherited addAll: #(
-			"New closure optimizations"
-			#testCompiledMethodNotChangedConstant) ].
 		
 	^ inherited

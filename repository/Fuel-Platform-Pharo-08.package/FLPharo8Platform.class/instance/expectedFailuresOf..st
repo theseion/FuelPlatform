@@ -10,23 +10,26 @@ expectedFailuresOf: aClass
 			testWideStringGlobal
 			testConsiderCustomWideSymbolGlobal
 			testWideStringClassName) ].
-	(aClass includesBehavior: (Smalltalk at: #FLFullBlockClosureSerializationTest)) ifTrue: [ 
-		inherited addAll: #(testBlockClosureRemoved testBlockClosureChangeDifferentBytecodes) ].
-	aClass = (Smalltalk at: #FLFullBlockClosureSerializationTest) ifTrue: [
+	(aClass includesBehavior: (Smalltalk at: #FLFullBlockClosureSerializationTest)) ifTrue: [
+		inherited addAll: #(
+			"New closure optimizations"
+			testBlockClosureChangeDifferentBytecodes
+			testBlockClosureChangeDifferentBytecodesConstant
+			testBlockClosureChangeDifferentBytecodesNonClean
+			testBlockClosureChangeSameBytecodesConstant
+			testBlockClosureRemoved
+			testBlockClosureRemovedConstant
+			testBlockClosureRemovedNonClean) ].
+	(aClass includesBehavior: (Smalltalk at: #FLBlockClosureSerializationTest)) ifTrue: [
 		inherited addAll: #(
 			"New closure optimizations"
 			#testBlockClosureChangeDifferentBytecodesConstant
 			#testBlockClosureChangeSameBytecodesConstant
 			#testBlockClosureRemovedConstant) ].
-	aClass = (Smalltalk at: #FLBlockClosureSerializationTest) ifTrue: [
+	(aClass includesBehavior: (Smalltalk at: #FLGlobalEnvironmentTest)) ifTrue: [
 		inherited addAll: #(
 			"New closure optimizations"
-			#testBlockClosureChangeDifferentBytecodesConstant
-			#testBlockClosureChangeSameBytecodesConstant
-			#testBlockClosureRemovedConstant) ].
-	aClass = (Smalltalk at: #FLGlobalEnvironmentTest) ifTrue: [
-		inherited addAll: #(
-			"New closure optimizations"
-			#testCompiledMethodNotChangedConstant) ].
+			testCompiledMethodNotChangedConstant
+			testCompiledMethodChangedNonClean) ].
 		
 	^ inherited
