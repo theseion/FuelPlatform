@@ -16,4 +16,5 @@ basicAddHacks
 		addMetaclassForTraits;
 		addPointerLayout;
 		addTaSequence;
-		addTraitedMetaclass
+		addTraitedMetaclass;
+		addCleanBlockClosure

@@ -2,4 +2,6 @@ private-hacks
 basicAddHacks
 	super basicAddHacks.
 	
-	self addAbstractEnvironmentTestCase
+	self
+		addAbstractEnvironmentTestCase;
+		addCleanBlockClosure
