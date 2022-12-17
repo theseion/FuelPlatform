@@ -20,5 +20,22 @@ expectedFailuresOf: aClass
 	(aClass includesBehavior: (Smalltalk at: #FLGlobalTraitSerializationTest)) ifTrue: [
 		"Pharo 7 does not have stateful traits"
 		inherited add: #testCreateClassWithCreatedTraitWithInstanceVariable ].
+	
+	aClass = (Smalltalk at: #FLFullBlockClosureSerializationTest) ifTrue: [
+		inherited addAll: #(
+			"New closure optimizations"
+			#testBlockClosureChangeDifferentBytecodesConstant
+			#testBlockClosureChangeSameBytecodesConstant
+			#testBlockClosureRemovedConstant) ].
+	aClass = (Smalltalk at: #FLBlockClosureSerializationTest) ifTrue: [
+		inherited addAll: #(
+			"New closure optimizations"
+			#testBlockClosureChangeDifferentBytecodesConstant
+			#testBlockClosureChangeSameBytecodesConstant
+			#testBlockClosureRemovedConstant) ].
+	aClass = (Smalltalk at: #FLGlobalEnvironmentTest) ifTrue: [
+		inherited addAll: #(
+			"New closure optimizations"
+			#testCompiledMethodNotChangedConstant) ].
 		
 	^ inherited

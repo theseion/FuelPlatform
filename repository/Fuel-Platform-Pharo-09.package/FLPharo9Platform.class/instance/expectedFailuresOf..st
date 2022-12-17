@@ -10,5 +10,21 @@ expectedFailuresOf: aClass
 			testWideStringGlobal
 			testConsiderCustomWideSymbolGlobal
 			testWideStringClassName) ].
+	aClass = (Smalltalk at: #FLFullBlockClosureSerializationTest) ifTrue: [
+		inherited addAll: #(
+			"New closure optimizations"
+			#testBlockClosureChangeDifferentBytecodesConstant
+			#testBlockClosureChangeSameBytecodesConstant
+			#testBlockClosureRemovedConstant) ].
+	aClass = (Smalltalk at: #FLBlockClosureSerializationTest) ifTrue: [
+		inherited addAll: #(
+			"New closure optimizations"
+			#testBlockClosureChangeDifferentBytecodesConstant
+			#testBlockClosureChangeSameBytecodesConstant
+			#testBlockClosureRemovedConstant) ].
+	aClass = (Smalltalk at: #FLGlobalEnvironmentTest) ifTrue: [
+		inherited addAll: #(
+			"New closure optimizations"
+			#testCompiledMethodNotChangedConstant) ].
 		
 	^ inherited
