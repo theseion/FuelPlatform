@@ -25,13 +25,9 @@ expectedFailuresOf: aClass
 	(aClass includesBehavior: (Smalltalk at: #FLFullBlockClosureSerializationTest)) ifTrue: [
 		inherited addAll: #(
 			"New closure optimizations"
-			testBlockClosureChangeDifferentBytecodes
 			testBlockClosureChangeDifferentBytecodesConstant
-			testBlockClosureChangeDifferentBytecodesNonClean
 			testBlockClosureChangeSameBytecodesConstant
-			testBlockClosureRemoved
-			testBlockClosureRemovedConstant
-			testBlockClosureRemovedNonClean) ].
+			testBlockClosureRemovedConstant) ].
 		
 	(aClass includesBehavior: (Smalltalk at: #FLBlockClosureSerializationTest)) ifTrue: [
 		inherited addAll: #(
