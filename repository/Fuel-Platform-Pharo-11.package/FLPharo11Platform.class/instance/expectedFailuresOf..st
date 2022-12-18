@@ -11,10 +11,8 @@ expectedFailuresOf: aClass
 			testConsiderCustomWideSymbolGlobal
 			testWideStringClassName) ].
 
-	FLVersion current <= (FLVersion
-		newWithMajor: 5
-		minor: 1
-		patch: 0) ifTrue: [
+	(FLVersion current major <= 5 and: [
+		FLVersion current minor <= 1 ]) ifTrue: [
 			(aClass includesBehavior: (Smalltalk at: #FLGlobalEnvironmentTest)) ifTrue: [
 				inherited addAll: #(
 					testCompiledMethodChanged) ].
