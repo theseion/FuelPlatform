@@ -10,5 +10,21 @@ expectedFailuresOf: aClass
 			testWideStringGlobal
 			testConsiderCustomWideSymbolGlobal
 			testWideStringClassName) ].
+
+	FLVersion current <= (FLVersion
+		newWithMajor: 5
+		minor: 1
+		patch: 0) ifTrue: [
+			(aClass includesBehavior: (Smalltalk at: #FLGlobalEnvironmentTest)) ifTrue: [
+				inherited addAll: #(
+					testCompiledMethodChanged) ].
+			(aClass includesBehavior: (Smalltalk at: #FLBlockClosureSerializationTest)) ifTrue: [
+				inherited addAll: #(
+					testBlockClosureChangeDifferentBytecodes
+					testBlockClosureChangeSameBytecodes
+					testBlockClosureRemoved) ].
+			(aClass includesBehavior: (Smalltalk at: #FLFullBlockClosureSerializationTest)) ifTrue: [
+				inherited addAll: #(
+					testBlockClosureChangeDifferentBytecodes) ] ].
 		
 	^ inherited
