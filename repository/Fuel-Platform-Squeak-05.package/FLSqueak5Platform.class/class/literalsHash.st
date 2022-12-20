@@ -14,5 +14,5 @@ literalsHash
 					to: hash bytesCount
 					do: [ :byteIndex | stream nextPut: (hash byteAt: byteIndex) ] ] ].
 	^ hashBytes
-		crc16From: 1
+		crc16from: 1
 		to: hashBytes size
