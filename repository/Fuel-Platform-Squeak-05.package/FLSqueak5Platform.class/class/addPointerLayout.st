@@ -4,7 +4,7 @@ addPointerLayout
 		at: #PointerLayout
 		ifPresent: [ :x | ^ self ].
 	
-	ObjectLayout subclass: #PointerLayout
+	Object subclass: #PointerLayout
 		instanceVariableNames: ''
 		classVariableNames: ''
 		poolDictionaries: ''
