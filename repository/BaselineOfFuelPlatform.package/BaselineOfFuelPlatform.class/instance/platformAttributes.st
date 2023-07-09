@@ -15,7 +15,7 @@ platformAttributes
 	(#('Pharo1.1' 'Pharo-1.1') anySatisfy: [ :version |
 			SystemVersion current version beginsWith: version ]) ifTrue: [ ^ #('pharo1.x') ].
 	
-	(SystemVersion current version endsWith: 'alpha') ifTrue: [ ^ #('squeak7.x') ].
+	(SystemVersion current version endsWith: 'alpha') ifTrue: [ ^ #('fuel-fallback') ].
 	(SystemVersion current version beginsWith: 'Squeak6') ifTrue: [ ^ #('squeak6.x') ].
 	(SystemVersion current version beginsWith: 'Squeak5') ifTrue: [ ^ #('squeak5.x') ].
 	((SystemVersion current version beginsWith: 'Squeak4.6') or: [
