@@ -1,5 +1,5 @@
 private-extensions-timezone
 timeZonesForTimeZone
-	<flExtensionOf: #TimeZone isSource: true>
+	<flExtensionOf: #TimeZone isClassSide: true isSource: true>
 	^ 'timeZones
 	FixedTimeZone timeZones'
