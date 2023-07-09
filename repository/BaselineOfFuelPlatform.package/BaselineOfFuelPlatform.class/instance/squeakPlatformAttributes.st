@@ -4,6 +4,7 @@ squeakPlatformAttributes
 	version := SystemVersion current version.
 	restOfVersion := version allButFirst: 'Squeak' size.
 	
+	(restOfVersion endsWith: 'alpha') ifTrue: [ ^ #('squeak-fallback') ].
 	(restOfVersion beginsWith: '6') ifTrue: [ ^ #('squeak6.x') ].
 	(restOfVersion beginsWith: '5') ifTrue: [ ^ #('squeak5.x') ].
 	((restOfVersion beginsWith: '4.6') or: [
