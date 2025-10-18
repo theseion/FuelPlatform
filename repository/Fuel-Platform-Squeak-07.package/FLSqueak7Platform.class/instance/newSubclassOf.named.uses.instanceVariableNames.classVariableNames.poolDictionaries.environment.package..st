@@ -12,5 +12,5 @@ newSubclassOf: aClass named: className uses: aTraitComposition instanceVariableN
 		category: packageName.
 		
 	^ class
-		setTraitComposition: aTraitComposition asTraitComposition;
+		uses: aTraitComposition asTraitComposition;
 		yourself
