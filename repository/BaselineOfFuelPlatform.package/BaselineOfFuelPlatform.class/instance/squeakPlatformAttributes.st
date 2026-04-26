@@ -6,13 +6,9 @@ squeakPlatformAttributes
 	
 	(restOfVersion endsWith: 'alpha') ifTrue: [ ^ #('squeak-fallback') ].
 	
-	6
-		to: 5
-		by: -1
-		do: [ :versionNumber |
-			(restOfVersion beginsWith: versionNumber asString) ifTrue: [ 
-				^ {'squeak', versionNumber, '.x'} ] ].
-
+	(restOfVersion beginsWith: '6.1') ifTrue: [ ^ {'squeak6.1'} ].
+	(restOfVersion beginsWith: '6.0') ifTrue: [ ^ {'squeak6.0'} ].
+	(restOfVersion beginsWith: '5') ifTrue: [ ^ {'squeak5.x'} ].
 	((restOfVersion beginsWith: '4.6') or: [
 			"See #fixSystemrestOfVersion"
 			[ (Smalltalk imageName includesSubString: '4.6') ]

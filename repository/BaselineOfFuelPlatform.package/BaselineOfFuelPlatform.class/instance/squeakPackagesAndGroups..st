@@ -17,6 +17,9 @@ squeakPackagesAndGroups: spec
 	spec for: #'squeak5.x' do: [
 		spec package: 'Fuel-Platform-Squeak-05' with: [ spec requires: 'Fuel-Platform-Squeak-Core' ].
 		spec group: 'FuelPlatformCurrentGroup' with: 'Fuel-Platform-Squeak-05' ].
-	spec for: #'squeak6.x' do: [
+	spec for: #'squeak6.0' do: [
 		spec package: 'Fuel-Platform-Squeak-06' with: [ spec requires: 'Fuel-Platform-Squeak-Core' ].
-		spec group: 'FuelPlatformCurrentGroup' with: 'Fuel-Platform-Squeak-06' ]
+		spec group: 'FuelPlatformCurrentGroup' with: 'Fuel-Platform-Squeak-06' ].
+	spec for: #'squeak6.1' do: [
+		spec package: 'Fuel-Platform-Squeak-061' with: [ spec requires: 'Fuel-Platform-Squeak-Core' ].
+		spec group: 'FuelPlatformCurrentGroup' with: 'Fuel-Platform-Squeak-061' ]
